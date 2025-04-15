@@ -1,59 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intention Project | Decentralized Key Recovery</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Intention – Decentralized Key Recovery Protocol</title>
+  <style>
+    /* Estilos generales de la página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: #58a6ff;
+    }
+
+    /* Estilo para los botones del acordeón */
+    .accordion {
+      background-color: #161b22;
+      color: #e6edf3;
+      border: none;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      font-size: 18px;
+    }
+    .accordion:hover {
+      background-color: #238636;
+    }
+    /* Paneles desplegables */
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: #21262d;
+      overflow: hidden;
+      border-left: 2px solid #58a6ff;
+    }
+
+    /* Estilo de pie de página */
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #8b949e;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Encabezado -->
   <header>
-    <div class="container">
-      <h1>Intention Project</h1>
-      <p>A New Era in Cryptographic Key Recovery</p>
-    </div>
+    <h1>Proyecto Intention</h1>
+    <p>Decentralized Private Key Recovery Protocol</p>
+    <nav>
+      <ul>
+        <li><a href="#whitepaper">Whitepaper</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#investment">Investment</a></li>
+        <li><a href="#legal">Legal</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="intro">
-    <div class="container">
-      <h2>What is Intention?</h2>
-      <p>The Intention Logarithm is a breakthrough cryptographic algorithm developed over five years to recover lost Bitcoin private keys—without brute force or violating decentralization. It introduces a new cryptographic paradigm: recovering through intention-based distributed inference.</p>
-    </div>
-  </section>
+  <!-- Sección Accordion -->
+  <button class="accordion">📄 Whitepaper</button>
+  <div class="panel" id="whitepaper">
+    <p>We invite you to download our official document to understand the science, phases, and responsible scope of our protocol.</p>
+    <a href="whitepaper.pdf" class="button" download>Download Whitepaper (PDF)</a>
+  </div>
 
-  <section class="video">
-    <div class="container">
-      <h2>Watch Our Project Video</h2>
-      <video controls>
-        <source src="assets/video-presentation.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </section>
+  <button class="accordion">📅 Roadmap</button>
+  <div class="panel" id="roadmap">
+    <p>Our roadmap outlines the key milestones and phases of the Proyecto Intention development.</p>
+    <ul>
+      <li><strong>Phase 1 - Research & Development:</strong> Complete – 5 years of theoretical work and testing in controlled environments.</li>
+      <li><strong>Phase 2 - Testnet Validation:</strong> In progress – Successful tests and mapping of private keys on the simulated network.</li>
+      <li><strong>Phase 3 - Mainnet Pre-Testing:</strong> Soon – Optimizing for the mainnet and controlled tests using valueless wallets.</li>
+      <li><strong>Phase 4 - Full Mainnet Deployment:</strong> Targeted for next year – Mainnet deployment with full security and recovery functionality.</li>
+    </ul>
+  </div>
 
-  <section class="whitepaper">
-    <div class="container">
-      <h2>Download the Whitepaper</h2>
-      <a href="whitepaper.pdf" class="button" download>Get the Full PDF</a>
-    </div>
-  </section>
+  <button class="accordion">💰 Investment Opportunities</button>
+  <div class="panel" id="investment">
+    <p>Proyecto Intention is looking for investors who share our vision of a decentralized key recovery protocol. Your investment will help us achieve the following:</p>
+    <ul>
+      <li>Optimize the algorithm for mainnet operation.</li>
+      <li>Ensure robust security measures and privacy for all users.</li>
+      <li>Conduct real-world tests to ensure full reliability of the recovery process.</li>
+      <li>Develop and deploy a user-friendly interface for easy access to the recovery system.</li>
+    </ul>
+    <p>We are currently seeking $50,000 in investment to complete the final phase of development and ensure a safe deployment on the Bitcoin mainnet.</p>
+    <p>Interested? Contact us at <strong>contact@intencionproyecto.com</strong>.</p>
+  </div>
 
-  <section class="wallets">
-    <div class="container">
-      <h2>Support the Project</h2>
-      <p>You can contribute to the development by donating to our official wallets:</p>
-      <ul>
-        <li><strong>BTC:</strong> bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6</li>
-        <li><strong>ETH / BNB / USDT:</strong> 0x04664e23e20536cc734b5db5ac653c2c19c84f68</li>
-      </ul>
-      <p>Contact: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a></p>
-    </div>
-  </section>
+  <button class="accordion">🔐 Legal & Ethical Notice</button>
+  <div class="panel" id="legal">
+    <p>We are pioneers of a new method, acting under international law and cybersecurity principles. Our technology is not designed for malicious use, and all operations are conducted in test environments. Responsibility, transparency, and ethical application guide our mission.</p>
+  </div>
 
+  <!-- Pie de página -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Intention Project. All rights reserved.</p>
-    </div>
+    <p>© 2025 Proyecto Intention – Imalaca & EntropySeeker. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Código para hacer funcionar el acordeón
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
+
