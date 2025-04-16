@@ -1,212 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Intención</title>
-  <!-- Aquí se incluye el CSS interno para que la página se vea profesional -->
-  <style>
-    /* ----------------- ESTILOS GENERALES ----------------- */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #101010;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    .container {
-      width: 85%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    /* ----------------- HEADER ----------------- */
-    header {
-      background-color: #1f1f1f;
-      text-align: center;
-      padding: 40px 20px;
-      border-bottom: 2px solid #333;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      color: #f7c843;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #ccc;
-    }
-    
-    /* ----------------- SECCIONES ----------------- */
-    section {
-      background-color: #1a1a1a;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      margin: 20px 0;
-      padding: 30px;
-    }
-    h2 {
-      color: #f7c843;
-      margin-bottom: 15px;
-      font-size: 2rem;
-    }
-    p, li {
-      font-size: 1rem;
-      margin-bottom: 10px;
-      color: #e0e0e0;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    
-    /* ----------------- BOTONES DE LLAMADA A LA ACCIÓN ----------------- */
-    .cta-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      margin-top: 10px;
-    }
-    .cta-button:hover {
-      background-color: #0056b3;
-    }
-    
-    /* ----------------- FOOTER ----------------- */
-    footer {
-      background-color: #1f1f1f;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.9rem;
-      color: #ccc;
-      border-top: 2px solid #333;
-    }
-    
-    /* ----------------- BOTONES DE COPIAR ----------------- */
-    .copy-btn {
-      background-color: #444;
-      color: #fff;
-      border: none;
-      padding: 5px 10px;
-      margin-left: 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .copy-btn:hover {
-      background-color: #666;
-    }
-  </style>
-</head>
-<body>
-  <!-- CONTENEDOR PRINCIPAL -->
-  <div class="container">
-    <!-- HEADER -->
-    <header>
-      <h1>Proyecto Intención</h1>
-      <p>Una nueva era en la recuperación de claves criptográficas</p>
-    </header>
-    
-    <!-- PRESENTACIÓN -->
-    <section id="presentation">
-      <h2>What is Intention Project?</h2>
-      <p>Project Intention is a cryptographic revolution that breaks everything you thought you knew about Bitcoin key security and loss. For over five years, our founders, Imalaca and EntropySeeker, have worked silently on an algorithm capable of the impossible: recovering lost private keys without brute force, without compromising the network, and without sacrificing decentralization.</p>
-      <p>Intention is not just a theory; it's a proven methodology that uses intentional distributed inference combined with mathematical projection maps and advanced probability models, restoring what once seemed irrecoverable with pinpoint precision.</p>
-    </section>
-    
-    <!-- VIDEO -->
-    <section id="video">
-      <h2>Watch Our Project Video</h2>
-      <!-- Replace the URL below with your actual YouTube video URL -->
-      <a href="https://youtube.com/watch?v=YOUR_VIDEO_ID" class="cta-button" target="_blank">Watch the Video</a>
-    </section>
-    
-    <!-- WHITEPAPER -->
-    <section id="whitepaper-section">
-      <h2>Technical Whitepaper</h2>
-      <p>Click below to view the full technical document directly in your browser:</p>
-      <!-- Replace the URL below with the correct URL to your whitepaper PDF -->
-      <a href="https://yourdomain.com/whitepaper.pdf" class="cta-button" target="_blank">View the Whitepaper (PDF)</a>
-      <button class="copy-btn" onclick="copyText('https://yourdomain.com/whitepaper.pdf')">Copy Link</button>
-    </section>
-    
-    <!-- SUPPORT -->
-    <section id="support">
-      <h2>Support the Project</h2>
-      <p>You can contribute to the development by donating to our official wallets:</p>
-      <ul>
-        <li><strong>BTC:</strong> bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6 <button class="copy-btn" onclick="copyText('bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6')">Copy</button></li>
-        <li><strong>ETH/BNB/USDT (ERC20):</strong> 0x04664e23e20536cc734b5db5ac653c2c19c84f68 <button class="copy-btn" onclick="copyText('0x04664e23e20536cc734b5db5ac653c2c19c84f68')">Copy</button></li>
-      </ul>
-    </section>
-    
-    <!-- ROADMAP -->
-    <section id="roadmap-info">
-      <h2>Roadmap</h2>
-      <ul>
-        <li><strong>Phase 1 - Research & Development:</strong> Completed – 5 years of theoretical work and testing in controlled environments.</li>
-        <li><strong>Phase 2 - Test Network Validation:</strong> In progress – Successful tests and mapping of private keys on the simulated network.</li>
-        <li><strong>Phase 3 - Pre-Mainnet Tests:</strong> Coming soon – Optimization for the main network and controlled testing using wallets with no value.</li>
-        <li><strong>Phase 4 - Full Mainnet Deployment:</strong> Pending – Full mainnet deployment will occur once all security protocols are completed and necessary funding is secured.</li>
-      </ul>
-    </section>
-    
-    <!-- INVESTMENT -->
-    <section id="investment">
-      <h2>Investment Opportunities</h2>
-      <p>The Intention Project seeks investors who share our vision of a decentralized key recovery protocol. Your investment will help us:</p>
-      <ul>
-        <li>Optimize the algorithm for mainnet operation.</li>
-        <li>Ensure robust security measures and user privacy.</li>
-        <li>Conduct real-world tests to guarantee full reliability of the recovery process.</li>
-        <li>Develop and implement an easy-to-use interface for accessing the recovery system.</li>
-      </ul>
-      <p>We are currently seeking an investment of <strong>$50,000</strong> to complete the final phase of development and ensure secure mainnet deployment.</p>
-      <p>Interested? Contact us at <a href="mailto:contact@intentionproject.com">contact@intentionproject.com</a></p>
-    </section>
-    
-    <!-- CONTACT -->
-    <section id="contact-info">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a></p>
-      <p>Website: <a href="https://www.intencionproyecto.com" target="_blank">www.intencionproyecto.com</a></p>
-    </section>
-    
-    <!-- SOCIAL MEDIA -->
-    <section id="social">
-      <h2>Social Media</h2>
-      <ul>
-        <li><a href="https://x.com/ProyectoIntention" target="_blank">X (formerly Twitter)</a></li>
-        <li><a href="https://reddit.com/r/ProyectoIntention" target="_blank">Reddit</a></li>
-      </ul>
-    </section>
-    
-    <!-- LEGAL -->
-    <section id="legal">
-      <h2>Legal and Ethical Disclaimer</h2>
-      <p>We are pioneers in a new method, operating under international law and cybersecurity principles. Our technology is not designed for malicious uses, and all operations are conducted in test environments. Responsibility, transparency, and ethical application guide our mission.</p>
-    </section>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Intention Project - Decentralized Cryptographic Key Recovery for Bitcoin" />
+    <title>Intention Project</title>
+    <style>
+      /* =============================
+         ESTILOS GENERALES
+         ============================= */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #121212; /* Fondo oscuro */
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+      
+      /* Contenedor principal para centrar y dar márgenes al contenido */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      /* =============================
+         HEADER
+         ============================= */
+      header {
+        background-color: #1f1f1f;
+        text-align: center;
+        padding: 40px 20px;
+        border-bottom: 2px solid #333;
+      }
+      header h1 {
+        font-size: 2.8rem;
+        margin: 0 0 10px;
+        color: #f7c843;
+      }
+      header p {
+        font-size: 1.3rem;
+        color: #ccc;
+      }
+      
+      /* =============================
+         SECCIONES
+         ============================= */
+      section {
+        background-color: #1a1a1a;
+        margin: 20px 0;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+      }
+      
+      /* Titulos de secciones */
+      h2, h3, h4 {
+        color: #f7c843;
+        margin-bottom: 15px;
+      }
+      
+      /* Párrafos y listas */
+      p, li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+      
+      /* =============================
+         BOTONES
+         ============================= */
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+      }
+      .cta-button:hover {
+        background-color: #0056b3;
+      }
+      
+      /* Botones para copiar texto */
+      .copy-btn {
+        background-color: #444;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .copy-btn:hover {
+        background-color: #666;
+      }
+      
+      /* =============================
+         FOOTER
+         ============================= */
+      footer {
+        background-color: #1f1f1f;
+        color: #aaa;
+        text-align: center;
+        padding: 20px 0;
+        border-top: 2px solid #333;
+      }
+      
+      /* =============================
+         COMENTARIOS: INSTRUCCIONES
+         =============================
+         Cada sección incluye un comentario en español para que sepas qué texto colocar.
+         - La sección "Presentation" contiene la información principal del proyecto.
+         - "What is Intention?" es la explicación del algoritmo.
+         - "How does it work?" explica el funcionamiento.
+         - "Vuelta Module" detalla la protección contra robos.
+         - "Historical Examples" describe ejemplos históricos.
+         - "Why Participate?" indica las razones para involucrarse.
+         - "Technical Whitepaper" es el enlace al PDF (debes reemplazar el enlace con el real).
+         - "Investment" es la sección de inversión (aquí se dice "Investment Opportunities").
+         - "Contact" y "Social" incluyen los datos de contacto y redes sociales (reemplaza los enlaces de redes sociales con los tuyos reales).
+      */
+    </style>
+  </head>
 
-  <footer>
-    <p>&copy; 2025 Intention Project. All rights reserved.</p>
-  </footer>
+  <body>
+    <div class="container">
+      <!-- PRESENTATION SECTION: Información del Proyecto -->
+      <header id="presentation">
+        <h1>Intention Project</h1>
+        <h2>Decentralized Cryptographic Recovery · Smart Protection · A New Frontier</h2>
+      </header>
 
-  <script>
-    function copyText(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Copied to clipboard: ' + text);
-      });
-    }
-  </script>
-</body>
+      <!-- ¿WHAT IS INTENTION? -->
+      <section id="what-is-intention">
+        <h2>What is Intention?</h2>
+        <p>
+          The Intention Algorithm is an innovative cryptographic method developed over five years to recover lost Bitcoin private keys without brute force and without compromising decentralization. It introduces a new cryptographic paradigm: recovery through distributed inference based on intent.
+        </p>
+        <p>
+          Intention is not just a theory; it's a proven methodology that uses advanced cryptographic techniques to ensure that a lost private key can be recovered without harming the integrity of the Bitcoin network.
+        </p>
+      </section>
+
+      <!-- HOW DOES IT WORK? -->
+      <section id="how-it-works">
+        <h2>How does it work?</h2>
+        <p>
+          Unlike methods that rely on chance or computational brute force, Intention identifies natural patterns of intent in key creation by using advanced mathematics to reduce an infinite number of possibilities to a high-probability focal point.
+        </p>
+        <p>
+          When a user requests help, Intention does not search randomly; it reconstructs the mental and mathematical map that led to the original creation of the private key, cross-referencing it with a distributed model operating in secure environments.
+        </p>
+      </section>
+
+      <!-- VUELTA MODULE -->
+      <section id="vuelta-module">
+        <h2>"Vuelta" Module: Protection Against Theft</h2>
+        <p>
+          What if someone steals your funds? This is where our “Vuelta” system comes in.
+        </p>
+        <p>
+          Vuelta is a hidden protocol that can be embedded in any compatible wallet. If an unauthorized movement is detected (for example, if someone accesses your funds without your knowledge), a programmed recovery sequence is triggered that redirects the funds to a new, secure address of the rightful owner.
+        </p>
+        <p>
+          It works like an immune system within your wallet: silent, vigilant, and ready to act only when needed.
+        </p>
+      </section>
+
+      <!-- HISTORICAL EXAMPLES -->
+      <section id="historical-examples">
+        <h2>Historical Examples: When Technology Achieved the Impossible</h2>
+        <p>
+          Recovering Neanderthal DNA seemed impossible 30 years ago. Today, we analyze it as if collecting a saliva sample.
+        </p>
+        <p>
+          Bitcoin was once ridiculed – money without a bank, without a government, without backing. Today, it drives economies.
+        </p>
+        <p>
+          The Nazi Enigma code seemed unbreakable until Alan Turing and his team changed the course of history.
+        </p>
+        <p>
+          Now it’s Intention’s turn. What was once termed “irreversible” or “lost forever” in Bitcoin… is no longer the case.
+        </p>
+      </section>
+
+      <!-- WHY PARTICIPATE? -->
+      <section id="why-participate">
+        <h2>Why Participate?</h2>
+        <ul>
+          <li>Because you can support one of the boldest technologies since the birth of Bitcoin.</li>
+          <li>Because if you ever lose your private key, you are no longer doomed.</li>
+          <li>Because you can invest early in a solution that will have a profound impact on the crypto ecosystem.</li>
+          <li>Because you will be protecting millions of users from catastrophic losses.</li>
+        </ul>
+      </section>
+
+      <!-- TECHNICAL WHITEPAPER -->
+      <section id="whitepaper-section">
+        <h2>Technical Whitepaper</h2>
+        <p>
+          Read all the technical foundations, project phases, controlled tests, and the plan to safely bring Intention to Bitcoin Mainnet.
+        </p>
+        <!-- Reemplaza URL_OF_PDF por la URL real de tu documento PDF -->
+        <a href="URL_OF_PDF" class="cta-button" target="_blank">View the Technical Whitepaper (PDF)</a>
+        <button class="copy-btn" onclick="copyText('URL_OF_PDF')">Copy Link</button>
+      </section>
+
+      <!-- SUPPORT / INVESTMENT -->
+      <section id="support-investment">
+        <h2>Investment Opportunities</h2>
+        <p>
+          The Intention Project seeks investors who share our vision of a decentralized key recovery protocol. Your investment will help us:
+        </p>
+        <ul>
+          <li>Optimize the algorithm for mainnet operation.</li>
+          <li>Ensure robust security measures and privacy for all users.</li>
+          <li>Conduct real-world tests to ensure the reliability of the recovery process.</li>
+          <li>Develop and implement an easy-to-use interface for accessing the recovery system.</li>
+        </ul>
+        <p>
+          We are currently seeking an investment of <strong>$50,000</strong> to complete the final phase of development and ensure secure implementation on the Bitcoin mainnet.
+        </p>
+        <p>
+          Interested? Contact us at <a href="mailto:contact@intentionproject.com">contact@intentionproject.com</a>
+        </p>
+      </section>
+
+      <!-- DONATIONS -->
+      <section id="donations">
+        <h2>Invest</h2>
+        <p>
+          Instead of traditional donations, you can invest in the project by contributing to our official wallets:
+        </p>
+        <ul>
+          <li>
+            <strong>BTC:</strong> bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6
+            <button class="copy-btn" onclick="copyText('bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6')">Copy</button>
+          </li>
+          <li>
+            <strong>ETH/BNB/USDT (ERC20):</strong> 0x04664e23e20536cc734b5db5ac653c2c19c84f68
+            <button class="copy-btn" onclick="copyText('0x04664e23e20536cc734b5db5ac653c2c19c84f68')">Copy</button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a></p>
+        <p>Website: <a href="https://www.intencionproyecto.com" target="_blank">www.intencionproyecto.com</a></p>
+      </section>
+
+      <!-- SOCIAL MEDIA -->
+      <section id="social">
+        <h2>Social Media</h2>
+        <ul>
+          <li><a href="https://x.com/ProyectoIntention" target="_blank">X (formerly Twitter)</a></li>
+          <li><a href="https://reddit.com/r/ProyectoIntention" target="_blank">Reddit</a></li>
+          <!-- Reemplaza con los enlaces reales a tus redes sociales -->
+        </ul>
+      </section>
+
+      <!-- LEGAL AND ETHICAL DISCLAIMER -->
+      <section id="legal">
+        <h2>Legal and Ethical Disclaimer</h2>
+        <p>
+          We are pioneers in a new method, operating under international law and cybersecurity principles. Our technology is not designed for malicious uses, and all operations are conducted in test environments. Responsibility, transparency, and ethical application guide our mission.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Intention Project. All rights reserved.</p>
+    </footer>
+
+    <!-- Script para copiar texto -->
+    <script>
+      function copyText(text) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert('Copied to clipboard: ' + text);
+        });
+      }
+    </script>
+  </body>
 </html>
 
-    
-  
