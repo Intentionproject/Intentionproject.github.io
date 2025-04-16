@@ -59,7 +59,7 @@ Every donation is a seed that helps this technology grow.
 
 📬 Contact
 ✉️ Official Email: intentionproject@proton.me
-🌐 Website: www.intencionproyecto.com
+🌐 Website: https://intentionproject.github.io/
 
 📢 Social Media
 X (formerly Twitter)
