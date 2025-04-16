@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Proyecto Intention – Decentralized Key Recovery Protocol</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intention Project | Decentralized Key Recovery</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    /* Estilos generales de la página */
     body {
       font-family: Arial, sans-serif;
       background-color: #0d1117;
@@ -13,10 +14,10 @@
       margin: 0;
       padding: 0;
     }
-    header {
+    header, footer {
       background-color: #161b22;
-      padding: 30px 20px;
       text-align: center;
+      padding: 20px;
     }
     header h1 {
       margin: 0;
@@ -34,8 +35,6 @@
       text-decoration: none;
       color: #58a6ff;
     }
-
-    /* Estilo para los botones del acordeón */
     .accordion {
       background-color: #161b22;
       color: #e6edf3;
@@ -50,7 +49,6 @@
     .accordion:hover {
       background-color: #238636;
     }
-    /* Paneles desplegables */
     .panel {
       padding: 0 18px;
       display: none;
@@ -58,37 +56,80 @@
       overflow: hidden;
       border-left: 2px solid #58a6ff;
     }
-
-    /* Estilo de pie de página */
-    footer {
-      background-color: #161b22;
-      text-align: center;
+    .container {
+      max-width: 960px;
+      margin: auto;
       padding: 20px;
-      font-size: 0.9em;
-      color: #8b949e;
-      margin-top: 40px;
+    }
+    .wallet-info, .contact-info {
+      user-select: text;
+      -webkit-user-select: text;
+    }
+    .button {
+      background-color: #238636;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #2ea043;
+    }
+    .copy-btn {
+      background-color: #444c56;
+      margin-left: 10px;
+    }
+    .copy-btn:hover {
+      background-color: #586069;
     }
   </style>
 </head>
-<body>
 
-  <!-- Encabezado -->
+<body>
   <header>
-    <h1>Proyecto Intention</h1>
-    <p>Decentralized Private Key Recovery Protocol</p>
-    <nav>
-      <ul>
-        <li><a href="#whitepaper">Whitepaper</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#investment">Investment</a></li>
-        <li><a href="#legal">Legal</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Intention Project</h1>
+      <p>A New Era in Cryptographic Key Recovery</p>
+    </div>
   </header>
 
-  <!-- Sección Accordion -->
+  <section class="intro container">
+    <h2>What is Intention?</h2>
+    <p>The Intention Logarithm is a breakthrough cryptographic algorithm developed over five years to recover lost Bitcoin private keys—without brute force or violating decentralization. It introduces a new cryptographic paradigm: recovering through intention-based distributed inference.</p>
+  </section>
+
+  <section class="video container">
+    <h2>Watch Our Project Video</h2>
+    <video controls>
+      <source src="assets/video-presentation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="whitepaper container" id="whitepaper">
+    <h2>Whitepaper</h2>
+    <p>Click below to view the full whitepaper directly in your browser:</p>
+    <a href="whitepaper.pdf" target="_blank" class="button">View Whitepaper (PDF)</a>
+    <button class="button copy-btn" onclick="copyText('https://yourdomain.com/whitepaper.pdf')">Copy Link</button>
+  </section>
+
+  <section class="wallets container">
+    <h2>Support the Project</h2>
+    <p class="wallet-info">You can contribute to the development by donating to our official wallets:</p>
+    <ul class="wallet-info">
+      <li><strong>BTC:</strong> <span id="btc">bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6</span> <button class="button copy-btn" onclick="copyText('bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6')">Copy</button></li>
+      <li><strong>ETH / BNB / USDT:</strong> <span id="eth">0x04664e23e20536cc734b5db5ac653c2c19c84f68</span> <button class="button copy-btn" onclick="copyText('0x04664e23e20536cc734b5db5ac653c2c19c84f68')">Copy</button></li>
+    </ul>
+    <p class="contact-info">Contact: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a> <button class="button copy-btn" onclick="copyText('intentionproject@proton.me')">Copy Email</button></p>
+  </section>
+
   <button class="accordion">📄 Whitepaper</button>
-  <div class="panel" id="whitepaper">
+  <div class="panel">
     <p>We invite you to download our official document to understand the science, phases, and responsible scope of our protocol.</p>
     <a href="whitepaper.pdf" class="button" download>Download Whitepaper (PDF)</a>
   </div>
@@ -100,7 +141,7 @@
       <li><strong>Phase 1 - Research & Development:</strong> Complete – 5 years of theoretical work and testing in controlled environments.</li>
       <li><strong>Phase 2 - Testnet Validation:</strong> In progress – Successful tests and mapping of private keys on the simulated network.</li>
       <li><strong>Phase 3 - Mainnet Pre-Testing:</strong> Soon – Optimizing for the mainnet and controlled tests using valueless wallets.</li>
-      <li><strong>Phase 4 - Full Mainnet Deployment:</strong> Targeted for next year – Mainnet deployment with full security and recovery functionality.</li>
+      <li><strong>Phase 4 - Full Mainnet Deployment:</strong> Pending – The full deployment on the mainnet will only occur after the completion of all security protocols and funding. Until then, all tests are strictly limited to testnets or valueless environments.</li>
     </ul>
   </div>
 
@@ -122,29 +163,30 @@
     <p>We are pioneers of a new method, acting under international law and cybersecurity principles. Our technology is not designed for malicious use, and all operations are conducted in test environments. Responsibility, transparency, and ethical application guide our mission.</p>
   </div>
 
-  <!-- Pie de página -->
   <footer>
-    <p>© 2025 Proyecto Intention – Imalaca & EntropySeeker. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Proyecto Intention – Imalaca & EntropySeeker. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
-    // Código para hacer funcionar el acordeón
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard: ' + text);
       });
     }
   </script>
-
 </body>
+
 </html>
+
 
