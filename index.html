@@ -1,151 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Intención</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #222;
-        }
-        p, ul {
-            font-size: 1rem;
-        }
-        .cta-button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 40px;
-        }
-        .social-links a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Intención</title>
+  <!-- Aquí se incluye el CSS interno para que la página se vea profesional -->
+  <style>
+    /* ----------------- ESTILOS GENERALES ----------------- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #101010;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* ----------------- HEADER ----------------- */
+    header {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 2px solid #333;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #f7c843;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+    
+    /* ----------------- SECCIONES ----------------- */
+    section {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+      padding: 30px;
+    }
+    h2 {
+      color: #f7c843;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #e0e0e0;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    
+    /* ----------------- BOTONES DE LLAMADA A LA ACCIÓN ----------------- */
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+    
+    /* ----------------- FOOTER ----------------- */
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #ccc;
+      border-top: 2px solid #333;
+    }
+    
+    /* ----------------- BOTONES DE COPIAR ----------------- */
+    .copy-btn {
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .copy-btn:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
 <body>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Proyecto Intención</h1>
+      <p>Una nueva era en la recuperación de claves criptográficas</p>
+    </header>
+    
+    <!-- PRESENTACIÓN -->
+    <section id="presentation">
+      <h2>What is Intention Project?</h2>
+      <p>Project Intention is a cryptographic revolution that breaks everything you thought you knew about Bitcoin key security and loss. For over five years, our founders, Imalaca and EntropySeeker, have worked silently on an algorithm capable of the impossible: recovering lost private keys without brute force, without compromising the network, and without sacrificing decentralization.</p>
+      <p>Intention is not just a theory; it's a proven methodology that uses intentional distributed inference combined with mathematical projection maps and advanced probability models, restoring what once seemed irrecoverable with pinpoint precision.</p>
+    </section>
+    
+    <!-- VIDEO -->
+    <section id="video">
+      <h2>Watch Our Project Video</h2>
+      <!-- Replace the URL below with your actual YouTube video URL -->
+      <a href="https://youtube.com/watch?v=YOUR_VIDEO_ID" class="cta-button" target="_blank">Watch the Video</a>
+    </section>
+    
+    <!-- WHITEPAPER -->
+    <section id="whitepaper-section">
+      <h2>Technical Whitepaper</h2>
+      <p>Click below to view the full technical document directly in your browser:</p>
+      <!-- Replace the URL below with the correct URL to your whitepaper PDF -->
+      <a href="https://yourdomain.com/whitepaper.pdf" class="cta-button" target="_blank">View the Whitepaper (PDF)</a>
+      <button class="copy-btn" onclick="copyText('https://yourdomain.com/whitepaper.pdf')">Copy Link</button>
+    </section>
+    
+    <!-- SUPPORT -->
+    <section id="support">
+      <h2>Support the Project</h2>
+      <p>You can contribute to the development by donating to our official wallets:</p>
+      <ul>
+        <li><strong>BTC:</strong> bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6 <button class="copy-btn" onclick="copyText('bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6')">Copy</button></li>
+        <li><strong>ETH/BNB/USDT (ERC20):</strong> 0x04664e23e20536cc734b5db5ac653c2c19c84f68 <button class="copy-btn" onclick="copyText('0x04664e23e20536cc734b5db5ac653c2c19c84f68')">Copy</button></li>
+      </ul>
+    </section>
+    
+    <!-- ROADMAP -->
+    <section id="roadmap-info">
+      <h2>Roadmap</h2>
+      <ul>
+        <li><strong>Phase 1 - Research & Development:</strong> Completed – 5 years of theoretical work and testing in controlled environments.</li>
+        <li><strong>Phase 2 - Test Network Validation:</strong> In progress – Successful tests and mapping of private keys on the simulated network.</li>
+        <li><strong>Phase 3 - Pre-Mainnet Tests:</strong> Coming soon – Optimization for the main network and controlled testing using wallets with no value.</li>
+        <li><strong>Phase 4 - Full Mainnet Deployment:</strong> Pending – Full mainnet deployment will occur once all security protocols are completed and necessary funding is secured.</li>
+      </ul>
+    </section>
+    
+    <!-- INVESTMENT -->
+    <section id="investment">
+      <h2>Investment Opportunities</h2>
+      <p>The Intention Project seeks investors who share our vision of a decentralized key recovery protocol. Your investment will help us:</p>
+      <ul>
+        <li>Optimize the algorithm for mainnet operation.</li>
+        <li>Ensure robust security measures and user privacy.</li>
+        <li>Conduct real-world tests to guarantee full reliability of the recovery process.</li>
+        <li>Develop and implement an easy-to-use interface for accessing the recovery system.</li>
+      </ul>
+      <p>We are currently seeking an investment of <strong>$50,000</strong> to complete the final phase of development and ensure secure mainnet deployment.</p>
+      <p>Interested? Contact us at <a href="mailto:contact@intentionproject.com">contact@intentionproject.com</a></p>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact-info">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a></p>
+      <p>Website: <a href="https://www.intencionproyecto.com" target="_blank">www.intencionproyecto.com</a></p>
+    </section>
+    
+    <!-- SOCIAL MEDIA -->
+    <section id="social">
+      <h2>Social Media</h2>
+      <ul>
+        <li><a href="https://x.com/ProyectoIntention" target="_blank">X (formerly Twitter)</a></li>
+        <li><a href="https://reddit.com/r/ProyectoIntention" target="_blank">Reddit</a></li>
+      </ul>
+    </section>
+    
+    <!-- LEGAL -->
+    <section id="legal">
+      <h2>Legal and Ethical Disclaimer</h2>
+      <p>We are pioneers in a new method, operating under international law and cybersecurity principles. Our technology is not designed for malicious uses, and all operations are conducted in test environments. Responsibility, transparency, and ethical application guide our mission.</p>
+    </section>
+  </div>
 
-<header>
-    <h1>Proyecto Intención</h1>
-    <p>Recuperación Criptográfica Descentralizada · Protección Inteligente · Una Nueva Frontera</p>
-</header>
+  <footer>
+    <p>&copy; 2025 Intention Project. All rights reserved.</p>
+  </footer>
 
-<section id="intro">
-    <h2>¿Qué es Proyecto Intención?</h2>
-    <p>Proyecto Intención es una revolución criptográfica que rompe con todo lo que creías saber sobre seguridad y pérdida de claves en Bitcoin. Durante más de cinco años, nuestros fundadores, Imalaca y EntropySeeker, han trabajado silenciosamente en un algoritmo capaz de lo imposible: recuperar claves privadas perdidas sin fuerza bruta, sin vulnerar la red, y sin comprometer la descentralización.</p>
-    <p>La intención es el primer sistema en el mundo que no busca claves al azar. En cambio, utiliza un enfoque llamado Inferencia Distribuida Intencional, que combina mapas de proyección matemática con modelos de probabilidad avanzados. Lo que antes parecía irrecuperable, ahora puede ser restaurado con precisión milimétrica.</p>
-</section>
-
-<section id="how-it-works">
-    <h2>¿Cómo funciona?</h2>
-    <p>Mientras otros métodos dependen de la suerte o la fuerza computacional, Intención identifica patrones naturales de intención en la creación de claves, utilizando matemáticas avanzadas para reducir un universo de posibilidades a un punto focal de alta probabilidad.</p>
-    <p>Cuando un usuario solicita ayuda, Intención no explora al azar: reconstruye el mapa mental y matemático que llevó a la creación original de su clave privada, cruzando estos datos con un modelo distribuido que opera en entornos seguros.</p>
-</section>
-
-<section id="modulo-vuelta">
-    <h2>Módulo “Vuelta”: Protección ante robos</h2>
-    <p>¿Y si alguien te roba tus fondos? Aquí entra nuestro sistema “Vuelta”.</p>
-    <p>Vuelta es un protocolo oculto que puede incrustarse en cualquier wallet compatible. En caso de que se detecte un movimiento no autorizado (por ejemplo, si alguien accede a tus fondos sin tu conocimiento), se activa una secuencia de recuperación programada que reenvía los fondos a una nueva dirección segura del verdadero propietario.</p>
-    <p>Es como un sistema inmunológico dentro de tu billetera: silencioso, vigilante y preparado para actuar solo cuando se necesita.</p>
-</section>
-
-<section id="historical-examples">
-    <h2>Ejemplos Históricos: Cuando la tecnología hizo lo imposible</h2>
-    <p>La recuperación del ADN de los Neandertales parecía imposible hace 30 años. Hoy, lo estudiamos como si tomamos una muestra de saliva.</p>
-    <p>Bitcoin mismo fue una idea ridiculizada al principio: dinero sin banco, sin gobierno, sin respaldo. Hoy mueve economías.</p>
-    <p>El código Enigma de los nazis parecía inquebrantable hasta que Alan Turing y su equipo cambiaron el curso de la historia.</p>
-    <p>Ahora es el turno de Intención. Lo que hasta ahora ha sido llamado "irreversible" o "perdido para siempre" en Bitcoin… ya no lo es.</p>
-</section>
-
-<section id="why-participate">
-    <h2>¿Por qué participar?</h2>
-    <ul>
-        <li>Porque puedes apoyar una de las tecnologías más audaces desde el nacimiento de Bitcoin.</li>
-        <li>Porque si alguna vez pierdes tu clave privada, ya no estás condenado.</li>
-        <li>Porque puedes invertir temprano en una solución que tendrá un impacto profundo en el ecosistema cripto.</li>
-        <li>Porque estarás protegiendo a millas, quizás millones, de usuarios de pérdidas catastróficas.</li>
-    </ul>
-</section>
-
-<section id="document">
-    <h2>Documento Técnico</h2>
-    <p>Lee todos los fundamentos técnicos, fases del proyecto, pruebas controladas y el plan para llevar a cabo Intención al Bitcoin Mainnet de forma segura y ética.</p>
-    <a href="path-to-your-pdf.pdf" class="cta-button">Ver el documento técnico (PDF)</a>
-</section>
-
-<section id="donations">
-    <h2>Donaciones / Carteras oficiales</h2>
-    <p>Bitcoin (BTC): bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6</p>
-    <p>ETH/BNB/USDT (ERC20): 0x04664e23e20536cc734b5db5ac653c2c19c84f68</p>
-    <p>Cada donación es una semilla que hace crecer esta tecnología.</p>
-</section>
-
-<section id="contact">
-    <h2>Contacto</h2>
-    <p>Correo oficial: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a></p>
-    <p>Visita nuestra página web: <a href="https://www.intencionproyecto.com" target="_blank">www.intencionproyecto.com</a></p>
-</section>
-
-<section id="social">
-    <h2>Redes Sociales</h2>
-    <div class="social-links">
-        <a href="https://twitter.com" target="_blank">X (Twitter)</a>
-        <a href="https://reddit.com" target="_blank">Reddit</a>
-    </div>
-</section>
-
-<section id="investment">
-    <h2>Oportunidad de Inversión</h2>
-    <p>Estamos recaudando $50,000 para completar la fase final del desarrollo y realizar las pruebas en mainnet de forma segura. Los primeros patrocinadores tendrán participación prioritaria en el sistema de licencias de recuperación e integración de Vuelta en wallets de terceros.</p>
-    <p><strong>Haz historia con nosotros.</strong></p>
-</section>
-
-<footer>
-    <p>&copy; 2025 Proyecto Intención. Todos los derechos reservados.</p>
-</footer>
-
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard: ' + text);
+      });
+    }
+  </script>
 </body>
 </html>
 
-
-     
-   
+    
+  
