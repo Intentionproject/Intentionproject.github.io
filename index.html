@@ -1,214 +1,57 @@
-<!DOCTYPE html>
-<html lang="es">
+<section id="presentation">
+  <div class="container">
+    <h2>Project Intention</h2>
+    <h3>Decentralized Cryptographic Recovery · Smart Protection · A New Frontier</h3>
+    
+    <h4>What is Project Intention?</h4>
+    <p>Project Intention is a cryptographic revolution that breaks everything you thought you knew about security and key loss in Bitcoin. For over five years, our founders, Imalaca and EntropySeeker, have been silently working on an algorithm capable of the impossible: recovering lost private keys without brute force, without violating the network, and without compromising decentralization.</p>
+    <p>Intention is the first system in the world that doesn’t search for keys randomly. Instead, it utilizes an approach called Intentional Distributed Inference, which combines mathematical projection maps with advanced probability models. What once seemed unrecoverable, can now be restored with pinpoint precision.</p>
+    
+    <h4>How does it work?</h4>
+    <p>While other methods rely on luck or computational power, Intention identifies natural patterns of intention in the creation of keys, using advanced mathematics to reduce a universe of possibilities to a high-probability focal point. When a user requests assistance, Intention does not explore randomly: it reconstructs the mental and mathematical map that led to the original creation of their private key, cross-referencing this data with a distributed model that operates in secure environments.</p>
+    
+    <h4>"Vuelta" Module: Protection Against Theft</h4>
+    <p>What if someone steals your funds? Enter our “Vuelta” system.</p>
+    <p>Vuelta is a hidden protocol that can be embedded in any compatible wallet. In the event of unauthorized movement (e.g., if someone accesses your funds without your knowledge), it triggers a scheduled recovery sequence that redirects the funds to a new, secure address belonging to the true owner.</p>
+    <p>It’s like an immune system within your wallet: silent, vigilant, and ready to act only when needed.</p>
+    
+    <h4>Historical Examples: When Technology Made the Impossible Happen</h4>
+    <p>Recovering Neanderthal DNA seemed impossible 30 years ago. Today, we study it as if we’re taking a saliva sample.</p>
+    <p>Bitcoin itself was ridiculed at first: money without a bank, without a government, without backing. Today it moves economies.</p>
+    <p>The Nazi Enigma code seemed unbreakable until Alan Turing and his team changed the course of history.</p>
+    <p>Now it’s the turn of Intention. What was once called “irreversible” or “lost forever” in Bitcoin... is no longer the case.</p>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Intención | Recuperación Descentralizada de Claves</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-      margin: 0;
-      padding: 0;
-    }
-
-    header,
-    footer {
-      background-color: #161b22;
-      text-align: center;
-      padding: 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    header p {
-      font-size: 1.2em;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #58a6ff;
-    }
-
-    section {
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .button {
-      background-color: #238636;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin-top: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .button:hover {
-      background-color: #2ea043;
-    }
-
-    h2 {
-      color: #58a6ff;
-      font-size: 2em;
-    }
-
-    .section-title {
-      margin-top: 30px;
-      font-size: 1.5em;
-      color: #58a6ff;
-    }
-
-    .wallet-info,
-    .contact-info {
-      user-select: text;
-    }
-
-    .copy-btn {
-      background-color: #444c56;
-      margin-left: 10px;
-    }
-
-    .copy-btn:hover {
-      background-color: #586069;
-    }
-
-    .accordion {
-      background-color: #161b22;
-      color: #e6edf3;
-      border: none;
-      padding: 18px;
-      width: 100%;
-      text-align: left;
-      cursor: pointer;
-      outline: none;
-      font-size: 18px;
-    }
-
-    .accordion:hover {
-      background-color: #238636;
-    }
-
-    .panel {
-      padding: 0 18px;
-      display: none;
-      background-color: #21262d;
-      overflow: hidden;
-      border-left: 2px solid #58a6ff;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Proyecto Intención</h1>
-    <p>Una nueva era en la recuperación de claves criptográficas</p>
-  </header>
-
-  <section class="intro container">
-    <h2>¿Qué es Intención?</h2>
-    <p>
-      El Logaritmo de Intención es un algoritmo criptográfico innovador, desarrollado durante cinco años, para recuperar claves privadas de Bitcoin perdidas, sin recurrir a la fuerza bruta ni violar la descentralización. Introduce un nuevo paradigma criptográfico: la recuperación mediante inferencia distribuida basada en la intención.
-    </p>
-  </section>
-
-  <section class="video container">
-    <h2>Vea el vídeo de nuestro proyecto</h2>
-    <video controls>
-      <source src="assets/video-presentation.mp4" type="video/mp4">
-      Su navegador no soporta la etiqueta de video.
-    </video>
-  </section>
-
-  <section class="whitepaper container" id="whitepaper">
-    <h2>Libro Blanco</h2>
-    <p>
-      Haga clic a continuación para ver el documento técnico completo directamente en su navegador:
-    </p>
-    <a href="whitepaper.pdf" target="_blank" class="button">Ver el documento técnico (PDF)</a>
-    <button class="button copy-btn" onclick="copyText('https://yourdomain.com/whitepaper.pdf')">Copiar enlace</button>
-  </section>
-
-  <section class="wallets container">
-    <h2>Apoya el Proyecto</h2>
-    <p class="wallet-info">Puedes contribuir al desarrollo donando a nuestras billeteras oficiales:</p>
-    <ul class="wallet-info">
-      <li><strong>BTC:</strong> <span id="btc">bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6</span> <button class="button copy-btn" onclick="copyText('bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6')">Copiar</button></li>
-      <li><strong>ETH / BNB / USDT:</strong> <span id="eth">0x04664e23e20536cc734b5db5ac653c2c19c84f68</span> <button class="button copy-btn" onclick="copyText('0x04664e23e20536cc734b5db5ac653c2c19c84f68')">Copiar</button></li>
-    </ul>
-    <p class="contact-info">Contacto: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a> <button class="button copy-btn" onclick="copyText('intentionproject@proton.me')">Copiar correo electrónico</button></p>
-  </section>
-
-  <section class="roadmap container" id="roadmap">
-    <h2>Hoja de Ruta</h2>
-    <p>La hoja de ruta describe los hitos y fases clave del desarrollo del Proyecto Intención:</p>
+    <h4>Why Participate?</h4>
     <ul>
-      <li><strong>Fase 1 - Investigación y desarrollo:</strong> Completada – 5 años de trabajo teórico y pruebas en entornos controlados.</li>
-      <li><strong>Fase 2 - Validación de la red de prueba:</strong> En progreso – Pruebas exitosas y mapeo de claves privadas en la red simulada.</li>
-      <li><strong>Fase 3 - Pruebas previas de la red principal:</strong> Próximamente – Optimización para la red principal y pruebas controladas utilizando billeteras sin valor.</li>
-      <li><strong>Fase 4 - Despliegue completo de la red principal:</strong> Pendiente – El despliegue completo en la red principal solo se realizará una vez completados todos los protocolos de seguridad y obtenidos los fondos necesarios. Hasta entonces, todas las pruebas se limitan estrictamente a redes de prueba o entornos sin valor.</li>
+      <li>Because you can support one of the boldest technologies since Bitcoin’s birth.</li>
+      <li>Because if you ever lose your private key, you’re no longer doomed.</li>
+      <li>Because you can invest early in a solution that will have a profound impact on the crypto ecosystem.</li>
+      <li>Because you’ll be protecting millions, perhaps billions, of users from catastrophic losses.</li>
     </ul>
-  </section>
 
-  <section class="investment container" id="investment">
-    <h2>Oportunidades de Inversión</h2>
-    <p>Proyecto Intención busca inversores que compartan nuestra visión de un protocolo descentralizado de recuperación de claves. Su inversión nos ayudará a:</p>
-    <ul>
-      <li>Optimizar el algoritmo para el funcionamiento de la red principal.</li>
-      <li>Asegurar medidas de seguridad sólidas y privacidad para todos los usuarios.</li>
-      <li>Realizar pruebas en el mundo real para garantizar la total confiabilidad del proceso de recuperación.</li>
-      <li>Desarrollar e implementar una interfaz fácil de usar para facilitar el acceso al sistema de recuperación.</li>
-    </ul>
-    <p>Actualmente estamos buscando una inversión de $50,000 para completar la fase final de desarrollo y garantizar una implementación segura en la red principal de Bitcoin.</p>
-    <p>¿Interesado? Contáctanos en <strong>contact@intencionproyecto.com</strong>.</p>
-  </section>
+    <h4>Technical Paper</h4>
+    <p>Read all the technical fundamentals, project phases, controlled tests, and the plan to bring Intention to Bitcoin Mainnet safely and ethically.</p>
+    <p><a href="URL_TO_PDF" target="_blank">View the Technical Paper in PDF</a></p>
 
-  <section class="legal container" id="legal">
-    <h2>Aviso Legal y Ético</h2>
-    <p>Somos pioneros en un nuevo método, actuando bajo el derecho internacional y los principios de ciberseguridad. Nuestra tecnología no está diseñada para usos maliciosos y todas las operaciones se realizan en entornos de prueba. La responsabilidad, la transparencia y la aplicación ética guían nuestra misión.</p>
-  </section>
+    <h4>Donations / Official Wallets</h4>
+    <p>Bitcoin (BTC): <strong>bc1qyapqu6q38zc5w0zk74jz0nvhwfk2wzx2kznsa6</strong></p>
+    <p>ETH/BNB/USDT (ERC20): <strong>0x04664e23e20536cc734b5db5ac653c2c19c84f68</strong></p>
+    <p>Each donation is a seed that helps grow this technology.</p>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Proyecto Intención – Imalaca & EntropySeeker. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <h4>Video Presentation</h4>
+    <p>Watch our video on YouTube: <a href="URL_TO_YOUTUBE_VIDEO" target="_blank">Watch Now</a></p>
 
-  <script>
-    function copyText(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Texto copiado: ' + text);
-      });
-    }
-  </script>
-</body>
+    <h4>Contact</h4>
+    <p>Email: <a href="mailto:intentionproject@proton.me">intentionproject@proton.me</a></p>
+    <p>Website: <a href="https://www.intencionproyecto.com" target="_blank">www.intencionproyecto.com</a></p>
 
-</html>
+    <h4>Social Media</h4>
+    <p><a href="X_SOCIAL_MEDIA_LINK" target="_blank">X (formerly Twitter)</a></p>
+    <p><a href="REDDIT_LINK" target="_blank">Reddit</a></p>
 
+    <h4>Investment Opportunity</h4>
+    <p>We are raising $50,000 to complete the final development phase and safely conduct mainnet tests. Early sponsors will have priority participation in the recovery license system and the integration of Vuelta into third-party wallets.</p>
+    <p><a href="CONTACT_INVESTMENT_LINK">Make history with us!</a></p>
+  </div>
+</section>
 
